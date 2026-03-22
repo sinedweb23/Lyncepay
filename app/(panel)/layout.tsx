@@ -5,8 +5,13 @@ export default function PanelLayout({ children }: { children: React.ReactNode })
     <div className="min-h-screen bg-slate-50">
       <header className="border-b bg-white">
         <div className="container mx-auto flex h-14 items-center gap-6 px-4">
-          <Link href="/" className="font-semibold text-slate-800">
-            Painel SaaS
+          <Link href="/" className="flex items-center gap-2 font-semibold text-slate-800">
+            <img
+              src="/logo.png"
+              alt="Lyncepay"
+              className="h-8 w-auto object-contain"
+            />
+            <span>Painel SaaS</span>
           </Link>
           <nav className="flex gap-4">
             <Link href="/dashboard" className="text-sm text-slate-600 hover:text-slate-900">

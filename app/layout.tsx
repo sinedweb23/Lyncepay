@@ -2,8 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Painel SaaS | Eat',
+  title: 'Painel SaaS | Lyncepay',
   description: 'Gerenciamento de clientes da plataforma',
+  icons: {
+    icon: '/icon.ico',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
